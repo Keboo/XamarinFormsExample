@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:FormsExample.ViewModels;assembly=FormsExample"
+             x:Class="FormsExample.Pages.ItemSourceBinding" x:Name="Page">
+    <ContentPage.BindingContext>
+        <viewModels:ItemSourceViewModel />
+    </ContentPage.BindingContext>
+    <ScrollView>
+        <ListView ItemsSource="{Binding Items}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Path=Display}" 
+                              Command="{Binding TappedCommand}" 
+                              CommandParameter="{Binding Path=.}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,2 @@
+C:\Dev\FormsExample\FormsExample\FormsExample.WinPhone\FormsExample.WinPhone.csproj;neutral
+C:\Dev\FormsExample\FormsExample\FormsExample\FormsExample.csproj;neutral
