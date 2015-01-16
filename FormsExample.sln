@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
+# Visual Studio 2012
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsExample", "FormsExample\FormsExample\FormsExample.csproj", "{70748FCD-9212-43D9-8AFF-29F1A7307D76}"
@@ -27,16 +27,6 @@ Global
 		{70748FCD-9212-43D9-8AFF-29F1A7307D76}.Release|Any CPU.Build.0 = Release|Any CPU
 		{70748FCD-9212-43D9-8AFF-29F1A7307D76}.Release|ARM.ActiveCfg = Release|Any CPU
 		{70748FCD-9212-43D9-8AFF-29F1A7307D76}.Release|x86.ActiveCfg = Release|Any CPU
-		{BFC7BCE7-3019-49D9-98B8-71A39811E49E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BFC7BCE7-3019-49D9-98B8-71A39811E49E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BFC7BCE7-3019-49D9-98B8-71A39811E49E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{BFC7BCE7-3019-49D9-98B8-71A39811E49E}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{BFC7BCE7-3019-49D9-98B8-71A39811E49E}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{BFC7BCE7-3019-49D9-98B8-71A39811E49E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BFC7BCE7-3019-49D9-98B8-71A39811E49E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BFC7BCE7-3019-49D9-98B8-71A39811E49E}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{BFC7BCE7-3019-49D9-98B8-71A39811E49E}.Release|ARM.ActiveCfg = Release|Any CPU
-		{BFC7BCE7-3019-49D9-98B8-71A39811E49E}.Release|x86.ActiveCfg = Release|Any CPU
 		{884C4364-8FA0-4CFC-9497-909403017A9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{884C4364-8FA0-4CFC-9497-909403017A9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{884C4364-8FA0-4CFC-9497-909403017A9C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
@@ -55,6 +45,16 @@ Global
 		{884C4364-8FA0-4CFC-9497-909403017A9C}.Release|x86.ActiveCfg = Release|x86
 		{884C4364-8FA0-4CFC-9497-909403017A9C}.Release|x86.Build.0 = Release|x86
 		{884C4364-8FA0-4CFC-9497-909403017A9C}.Release|x86.Deploy.0 = Release|x86
+		{BFC7BCE7-3019-49D9-98B8-71A39811E49E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFC7BCE7-3019-49D9-98B8-71A39811E49E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFC7BCE7-3019-49D9-98B8-71A39811E49E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BFC7BCE7-3019-49D9-98B8-71A39811E49E}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{BFC7BCE7-3019-49D9-98B8-71A39811E49E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BFC7BCE7-3019-49D9-98B8-71A39811E49E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFC7BCE7-3019-49D9-98B8-71A39811E49E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFC7BCE7-3019-49D9-98B8-71A39811E49E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BFC7BCE7-3019-49D9-98B8-71A39811E49E}.Release|ARM.ActiveCfg = Release|Any CPU
+		{BFC7BCE7-3019-49D9-98B8-71A39811E49E}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

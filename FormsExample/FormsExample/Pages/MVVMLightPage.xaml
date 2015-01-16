@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:FormsExample.ViewModels;assembly=FormsExample"
+             x:Class="FormsExample.Pages.MVVMLightPage">
+    <ContentPage.BindingContext>
+        <viewModels:MVVMLightViewModel />
+    </ContentPage.BindingContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <StackLayout>
+            <Label Text="Username" />
+            <Entry Text="{Binding Username}" />
+            <Label Text="Password" />
+            <Entry Text="{Binding Password}" IsPassword="True" />
+        </StackLayout>
+        
+        <StackLayout Grid.Row="1" Orientation="Horizontal" VerticalOptions="End">
+            <Label Text="{Binding Username, StringFormat='Hi {0}'}" />
+            <Label Text="{Binding Password, StringFormat='your p/w is {0}'}" />
+        </StackLayout>
+        
+    </Grid>
+    
+</ContentPage>

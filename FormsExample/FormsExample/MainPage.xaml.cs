@@ -10,8 +10,8 @@ namespace FormsExample
             InitializeComponent();
             ListView.ItemsSource = new NameValue[]
             {
-                new NameValue<LayoutDemoPage>("Layout Demo"),
                 new NameValue<BasicBinding>("Basic Binding Demo"),
+                new NameValue<MVVMLightPage>("MVVMLight Demo"),
                 new NameValue<ItemSourceBinding>("Item Source Binding"),
             };
             ListView.ItemTapped += ListViewOnItemTapped;

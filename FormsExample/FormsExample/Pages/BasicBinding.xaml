@@ -1,6 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:FormsExample.ViewModels;assembly=FormsExample"
+             xmlns:valueConverter="clr-namespace:FormsExample.ValueConverter;assembly=FormsExample"
              x:Class="FormsExample.Pages.BasicBinding">
-	<Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+    <ContentPage.BindingContext>
+        <viewModels:BasicBindingViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <valueConverter:MultiplyValueConverter x:Key="MultiplyValueConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout Padding="10">
+        <Label Text="{Binding Path=Title}">
+            <Label.TextColor>
+                <OnPlatform x:TypeArguments="Color" Android="Green" iOS="White" WinPhone="Blue" />
+            </Label.TextColor>
+        </Label>
+
+        <Frame Padding="0,10,0,0">
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="My Value:" VerticalOptions="Center"/>
+                <Entry Grid.Column="1" Text="{Binding Value}"/>
+            </Grid>
+        </Frame>
+        <Label Text="{Binding Value, 
+               StringFormat='Value multiplied by 100 = {0}', 
+               Mode=OneWay, 
+               Converter={StaticResource MultiplyValueConverter},
+               ConverterParameter=100}" 
+               x:Name="MultipliedValueLabel"/>
+        <Label BindingContext="{x:Reference MultipliedValueLabel}"
+            Text="{Binding Text, StringFormat='Previous label: {0}'}" />
+
+        <Frame Padding="10,5">
+            <StackLayout>
+                <Label Text="{Binding Cost, StringFormat='Cost {0:C}'}" />
+                <Button Text="Change Cost" Command="{Binding ChangeCostCommand}"/>
+            </StackLayout>
+        </Frame>
+
+    </StackLayout>
 </ContentPage>

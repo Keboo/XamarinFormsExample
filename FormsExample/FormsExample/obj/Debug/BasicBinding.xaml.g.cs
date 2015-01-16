@@ -16,8 +16,11 @@ namespace FormsExample.Pages {
     
     public partial class BasicBinding : ContentPage {
         
+        private Label MultipliedValueLabel;
+        
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(BasicBinding));
+            MultipliedValueLabel = this.FindByName<Label>("MultipliedValueLabel");
         }
     }
 }

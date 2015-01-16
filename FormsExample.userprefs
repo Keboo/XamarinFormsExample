@@ -1,0 +1,13 @@
+﻿<Properties StartupItem="FormsExample\FormsExample.Droid\FormsExample.Droid.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.10.71.34.101:5555" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FormsExample\FormsExample\Pages\BasicBinding.xaml">
+    <Files>
+      <File FileName="FormsExample\FormsExample\MainPage.xaml" Line="1" Column="1" />
+      <File FileName="FormsExample\FormsExample\Pages\BasicBinding.xaml" Line="44" Column="44" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

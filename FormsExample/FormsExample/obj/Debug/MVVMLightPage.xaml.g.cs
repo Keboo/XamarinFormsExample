@@ -14,13 +14,10 @@ namespace FormsExample.Pages {
     using Xamarin.Forms.Xaml;
     
     
-    public partial class LayoutDemoPage : ContentPage {
-        
-        private ListView ListView;
+    public partial class MVVMLightPage : ContentPage {
         
         private void InitializeComponent() {
-            this.LoadFromXaml(typeof(LayoutDemoPage));
-            ListView = this.FindByName<ListView>("ListView");
+            this.LoadFromXaml(typeof(MVVMLightPage));
         }
     }
 }
