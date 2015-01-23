@@ -29,7 +29,7 @@
                 </Grid.ColumnDefinitions>
 
                 <Label Text="My Value:" VerticalOptions="Center"/>
-                <Entry Grid.Column="1" Text="{Binding Value}"/>
+                <Entry Grid.Column="1" Text="{Binding Value}" Keyboard="{x:Static Keyboard.Numeric}"/>
             </Grid>
         </Frame>
         <Label Text="{Binding Value, 

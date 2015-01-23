@@ -8,6 +8,7 @@ namespace FormsExample.ViewModels
 {
     public class ItemSourceViewModel : ViewModelBase
     {
+        private static readonly Random _Random = new Random();
         public event EventHandler<ShowMessageEventArgs> ShowMessage;
         private readonly RelayCommand _AddItemCommand;
         private readonly RelayCommand<Item> _ItemSelectedCommand;
@@ -33,7 +34,7 @@ namespace FormsExample.ViewModels
 
         private void OnAddItem()
         {
-            Items.Add( new Item( new Random().Next().ToString(), _ItemSelectedCommand ) );
+            Items.Add( new Item( _Random.Next().ToString(), _ItemSelectedCommand ) );
         }
 
         private void OnItemSelected( Item item )
