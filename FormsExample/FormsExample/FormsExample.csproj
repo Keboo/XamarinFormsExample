@@ -44,6 +44,9 @@
     <Compile Include="Pages\ItemSourceBinding.xaml.cs">
       <DependentUpon>ItemSourceBinding.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Messaging.xaml.cs">
+      <DependentUpon>Messaging.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\MVVMLightPage.xaml.cs">
       <DependentUpon>MVVMLightPage.xaml</DependentUpon>
     </Compile>
@@ -52,6 +55,7 @@
     <Compile Include="ViewModels\BasicBindingViewModel.cs" />
     <Compile Include="ViewModels\ItemSourceViewModel.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
+    <Compile Include="ViewModels\MessagingViewModel.cs" />
     <Compile Include="ViewModels\MVVMLightViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -94,6 +98,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pages\MVVMLightPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\Messaging.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

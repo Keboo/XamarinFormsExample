@@ -8,18 +8,19 @@ namespace FormsExample
         public MainPage()
         {
             InitializeComponent();
-            ListView.ItemsSource = new NameValue[]
+            ListView.ItemsSource = new NamedPage[]
             {
-                new NameValue<BasicBinding>("Basic Binding Demo"),
-                new NameValue<MVVMLightPage>("MVVMLight Demo"),
-                new NameValue<ItemSourceBinding>("Item Source Binding"),
+                new NamedPage<BasicBinding>("Basic Binding Demo"),
+                new NamedPage<MVVMLightPage>("MVVMLight Demo"),
+                new NamedPage<ItemSourceBinding>("Item Source Binding"),
+                new NamedPage<Messaging>("Messaging"),
             };
             ListView.ItemTapped += ListViewOnItemTapped;
         }
 
         private async void ListViewOnItemTapped(object sender, ItemTappedEventArgs e)
         {
-            var nameValue = e.Item as NameValue;
+            var nameValue = e.Item as NamedPage;
             if ( nameValue != null )
             {
                 await Navigation.PushAsync( nameValue.GetPage() );
@@ -27,11 +28,11 @@ namespace FormsExample
         }
     }
 
-    public abstract class NameValue
+    public abstract class NamedPage
     {
         public string Name { get; set; }
 
-        protected NameValue( string name )
+        protected NamedPage( string name )
         {
             Name = name;
         }
@@ -39,9 +40,9 @@ namespace FormsExample
         public abstract Page GetPage();
     }
 
-    public class NameValue<T> : NameValue where T : Page, new()
+    public class NamedPage<T> : NamedPage where T : Page, new()
     {
-        public NameValue( string name )
+        public NamedPage( string name )
             : base( name )
         { }
 
