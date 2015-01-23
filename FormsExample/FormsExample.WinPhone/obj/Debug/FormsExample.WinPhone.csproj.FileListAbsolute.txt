@@ -212,3 +212,5 @@ C:\Dev\XamarinFormsExample\FormsExample\FormsExample.WinPhone\obj\Debug\Multiple
 C:\Dev\XamarinFormsExample\FormsExample\FormsExample.WinPhone\obj\Debug\ProjectArchitectures.txt
 C:\Dev\XamarinFormsExample\FormsExample\FormsExample.WinPhone\obj\Debug\MDILProjectFiles.xml
 C:\Dev\XamarinFormsExample\FormsExample\FormsExample.WinPhone\obj\Debug\XapCacheFile.xml
+C:\Dev\XamarinFormsExample\FormsExample\FormsExample.WinPhone\Bin\Debug\Xamarin.Forms.Core.xml
+C:\Dev\XamarinFormsExample\FormsExample\FormsExample.WinPhone\Bin\Debug\Xamarin.Forms.Xaml.xml

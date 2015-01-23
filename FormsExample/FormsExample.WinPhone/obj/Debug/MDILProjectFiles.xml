@@ -32,6 +32,8 @@
     <File Type="PCL">Xamarin.Forms.Xaml.dll</File>
     <File Type="PCL">GalaSoft.MvvmLight.dll</File>
     <File>System.Windows.Interactivity.dll</File>
+    <File>Xamarin.Forms.Core.xml</File>
+    <File>Xamarin.Forms.Xaml.xml</File>
     <File>GalaSoft.MvvmLight.xml</File>
     <File>WMAppManifest.xml</File>
     <File>AppxManifest.xml</File>

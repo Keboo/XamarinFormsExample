@@ -7,6 +7,7 @@ Android.Support.V4.App.FragmentManager.IOnBackStackChangedListenerImplementor;mo
 Android.Support.V4.View.ActionProvider.ISubUiVisibilityListenerImplementor;mono.android.support.v4.view.ActionProvider_SubUiVisibilityListenerImplementor
 Android.Support.V4.View.ActionProvider.IVisibilityListenerImplementor;mono.android.support.v4.view.ActionProvider_VisibilityListenerImplementor
 Android.Support.V4.View.MenuItemCompat.IOnActionExpandListenerImplementor;mono.android.support.v4.view.MenuItemCompat_OnActionExpandListenerImplementor
+Android.Support.V4.Widget.SwipeRefreshLayout.IOnRefreshListenerImplementor;mono.android.support.v4.widget.SwipeRefreshLayout_OnRefreshListenerImplementor
 Xamarin.Forms.Platform.Android.CellAdapter;xamarin.forms.platform.android.CellAdapter
 Xamarin.Forms.Platform.Android.FormsApplicationActivity;xamarin.forms.platform.android.FormsApplicationActivity
 Xamarin.Forms.Platform.Android.AndroidActivity;xamarin.forms.platform.android.AndroidActivity

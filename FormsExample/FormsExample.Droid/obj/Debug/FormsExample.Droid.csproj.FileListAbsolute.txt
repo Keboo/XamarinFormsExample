@@ -50,3 +50,5 @@ C:\Dev\XamarinFormsExample\FormsExample\FormsExample.Droid\obj\Debug\res\drawabl
 C:\Dev\XamarinFormsExample\FormsExample\FormsExample.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
 C:\Dev\XamarinFormsExample\FormsExample\FormsExample.Droid\obj\Debug\R.cs.flag
 C:\Dev\XamarinFormsExample\FormsExample\FormsExample.Droid\obj\Debug\uploadflags.txt
+C:\Dev\XamarinFormsExample\FormsExample\FormsExample.Droid\bin\Debug\Xamarin.Forms.Core.xml
+C:\Dev\XamarinFormsExample\FormsExample\FormsExample.Droid\bin\Debug\Xamarin.Forms.Xaml.xml
