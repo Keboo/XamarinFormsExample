@@ -1,2 +1,0 @@
-C:\Dev\XamarinFormsExample\FormsExample\FormsExample.WinPhone\FormsExample.WinPhone.csproj;neutral
-C:\Dev\XamarinFormsExample\FormsExample\FormsExample\FormsExample.csproj;neutral
