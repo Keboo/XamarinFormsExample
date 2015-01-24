@@ -214,3 +214,17 @@ C:\Dev\XamarinFormsExample\FormsExample\FormsExample.WinPhone\obj\Debug\MDILProj
 C:\Dev\XamarinFormsExample\FormsExample\FormsExample.WinPhone\obj\Debug\XapCacheFile.xml
 C:\Dev\XamarinFormsExample\FormsExample\FormsExample.WinPhone\Bin\Debug\Xamarin.Forms.Core.xml
 C:\Dev\XamarinFormsExample\FormsExample\FormsExample.WinPhone\Bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Dev\XamarinFormsExample\FormsExample\FormsExample.WinPhone\Bin\Debug\Microsoft.WindowsAzure.Mobile.dll
+C:\Dev\XamarinFormsExample\FormsExample\FormsExample.WinPhone\Bin\Debug\Newtonsoft.Json.dll
+C:\Dev\XamarinFormsExample\FormsExample\FormsExample.WinPhone\Bin\Debug\System.Net.Http.dll
+C:\Dev\XamarinFormsExample\FormsExample\FormsExample.WinPhone\Bin\Debug\System.Net.Http.Primitives.dll
+C:\Dev\XamarinFormsExample\FormsExample\FormsExample.WinPhone\Bin\Debug\Microsoft.WindowsAzure.Mobile.xml
+C:\Dev\XamarinFormsExample\FormsExample\FormsExample.WinPhone\Bin\Debug\Newtonsoft.Json.xml
+C:\Dev\XamarinFormsExample\FormsExample\FormsExample.WinPhone\Bin\Debug\System.Net.Http.xml
+C:\Dev\XamarinFormsExample\FormsExample\FormsExample.WinPhone\Bin\Debug\System.Net.Http.Primitives.xml
+C:\Dev\XamarinFormsExample\FormsExample\FormsExample.WinPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\en-US\Microsoft.WindowsAzure.MobileServices.Resources.resw
+C:\Dev\XamarinFormsExample\FormsExample\FormsExample.WinPhone\obj\Debug\System.Net.Http\en-US\System.Net.Http.SR.resw
+C:\Dev\XamarinFormsExample\FormsExample\FormsExample.WinPhone\obj\Debug\Microsoft.WindowsAzure.Mobile.pri
+C:\Dev\XamarinFormsExample\FormsExample\FormsExample.WinPhone\obj\Debug\Microsoft.WindowsAzure.Mobile\qualifiers.txt
+C:\Dev\XamarinFormsExample\FormsExample\FormsExample.WinPhone\obj\Debug\System.Net.Http.pri
+C:\Dev\XamarinFormsExample\FormsExample\FormsExample.WinPhone\obj\Debug\System.Net.Http\qualifiers.txt

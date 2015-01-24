@@ -37,8 +37,20 @@
     <AppxPackagedFile Include="C:\Dev\XamarinFormsExample\FormsExample\FormsExample\bin\Debug\GalaSoft.MvvmLight.dll">
       <PackagePath>GalaSoft.MvvmLight.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Dev\XamarinFormsExample\FormsExample\FormsExample\bin\Debug\Microsoft.WindowsAzure.Mobile.dll">
+      <PackagePath>Microsoft.WindowsAzure.Mobile.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Dev\XamarinFormsExample\FormsExample\FormsExample\bin\Debug\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Expression\Blend\Windows Phone\v8.0\Libraries\System.Windows.Interactivity.dll">
       <PackagePath>System.Windows.Interactivity.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Dev\XamarinFormsExample\FormsExample\FormsExample\bin\Debug\System.Net.Http.dll">
+      <PackagePath>System.Net.Http.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Dev\XamarinFormsExample\FormsExample\FormsExample\bin\Debug\System.Net.Http.Primitives.dll">
+      <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Dev\XamarinFormsExample\packages\WPtoolkit.4.2013.08.16\lib\wp8\ar-SA\Microsoft.Phone.Controls.Toolkit.resources.dll">
       <PackagePath>ar-SA\Microsoft.Phone.Controls.Toolkit.resources.dll</PackagePath>
@@ -228,6 +240,18 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Dev\XamarinFormsExample\FormsExample\FormsExample\bin\Debug\GalaSoft.MvvmLight.xml">
       <PackagePath>GalaSoft.MvvmLight.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Dev\XamarinFormsExample\FormsExample\FormsExample\bin\Debug\Microsoft.WindowsAzure.Mobile.xml">
+      <PackagePath>Microsoft.WindowsAzure.Mobile.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Dev\XamarinFormsExample\FormsExample\FormsExample\bin\Debug\Newtonsoft.Json.xml">
+      <PackagePath>Newtonsoft.Json.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Dev\XamarinFormsExample\FormsExample\FormsExample\bin\Debug\System.Net.Http.xml">
+      <PackagePath>System.Net.Http.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Dev\XamarinFormsExample\FormsExample\FormsExample\bin\Debug\System.Net.Http.Primitives.xml">
+      <PackagePath>System.Net.Http.Primitives.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Dev\XamarinFormsExample\FormsExample\FormsExample.WinPhone\Assets\BadgeLogo.png">
       <PackagePath>Assets\BadgeLogo.png</PackagePath>

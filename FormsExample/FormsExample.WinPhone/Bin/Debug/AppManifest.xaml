@@ -7,6 +7,10 @@
     <AssemblyPart x:Name="Xamarin.Forms.Platform.WP8" Source="Xamarin.Forms.Platform.WP8.dll" />
     <AssemblyPart x:Name="Xamarin.Forms.Xaml" Source="Xamarin.Forms.Xaml.dll" />
     <AssemblyPart x:Name="GalaSoft.MvvmLight" Source="GalaSoft.MvvmLight.dll" />
+    <AssemblyPart x:Name="Microsoft.WindowsAzure.Mobile" Source="Microsoft.WindowsAzure.Mobile.dll" />
+    <AssemblyPart x:Name="Newtonsoft.Json" Source="Newtonsoft.Json.dll" />
     <AssemblyPart x:Name="System.Windows.Interactivity" Source="System.Windows.Interactivity.dll" />
+    <AssemblyPart x:Name="System.Net.Http" Source="System.Net.Http.dll" />
+    <AssemblyPart x:Name="System.Net.Http.Primitives" Source="System.Net.Http.Primitives.dll" />
   </Deployment.Parts>
 </Deployment>

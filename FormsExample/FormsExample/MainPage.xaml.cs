@@ -1,4 +1,6 @@
-﻿using FormsExample.Pages;
+﻿using FormsExample.Messages;
+using FormsExample.Pages;
+using GalaSoft.MvvmLight.Messaging;
 using Xamarin.Forms;
 
 namespace FormsExample
@@ -14,11 +16,16 @@ namespace FormsExample
                 new NamedPage<MVVMLightPage>("MVVMLight Demo"),
                 new NamedPage<ItemSourceBinding>("Item Source Binding"),
                 new NamedPage<Messaging>("Messaging"),
+                new NamedPage<MobileServicesStorage>("Notes Mobile Service"),
             };
             ListView.ItemTapped += ListViewOnItemTapped;
+
+            #region Note Example Implementation
+            Messenger.Default.Register<NavigateToPage>( this, OnNavigateToPage );
+            #endregion Note Example Implementation
         }
 
-        private async void ListViewOnItemTapped(object sender, ItemTappedEventArgs e)
+        private async void ListViewOnItemTapped( object sender, ItemTappedEventArgs e )
         {
             var nameValue = e.Item as NamedPage;
             if ( nameValue != null )
@@ -26,6 +33,15 @@ namespace FormsExample
                 await Navigation.PushAsync( nameValue.GetPage() );
             }
         }
+
+        #region Note Example Implementation
+
+        private async void OnNavigateToPage( NavigateToPage message )
+        {
+            await Navigation.PushAsync( message.Page );
+        }
+
+        #endregion Note Example Implementation
     }
 
     public abstract class NamedPage
