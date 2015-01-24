@@ -2,7 +2,7 @@
 <CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
               xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
               xmlns:viewModels="clr-namespace:FormsExample.ViewModels;assembly=FormsExample"
-              x:Class="FormsExample.Pages.MobileServicesStorage" 
+              x:Class="FormsExample.Pages.NotesListView" 
               ItemsSource="{Binding Notes}">
     <CarouselPage.BindingContext>
         <viewModels:NotesViewModel />
@@ -18,7 +18,7 @@
                     <Label Text="{Binding Title}" 
                            FontAttributes="Bold"
                            FontSize="Large" />
-                    <Editor Text="{Binding Text}" 
+                    <Label Text="{Binding Text}" 
                             Grid.Row="1"/>
                 </Grid>
             </ContentPage>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:FormsExample.ViewModels;assembly=FormsExample"
+             x:Class="FormsExample.Pages.NotesSyncList">
+    <ContentPage.BindingContext>
+        <viewModels:NotesSyncListViewModel />
+    </ContentPage.BindingContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        
+        <ListView Grid.ColumnSpan="2" 
+                  ItemsSource="{Binding Notes}" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Note.Title}" 
+                              Command="{Binding ItemSelectedCommand}"
+                              CommandParameter="{Binding}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Label Text="{Binding Status}"
+               Grid.Row="1"
+               Grid.Column="0"
+               Grid.ColumnSpan="2"/>
+        <Button Text="Sync"
+                Grid.Row="2"
+                Grid.Column="0"
+                Command="{Binding SyncCommand}"/>
+        <Button Text="Create"
+                Grid.Row="2"
+                Grid.Column="1"
+                Command="{Binding CreateCommand}"></Button>
+    </Grid>
+</ContentPage>

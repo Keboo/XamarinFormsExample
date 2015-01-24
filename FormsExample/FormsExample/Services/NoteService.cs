@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.WindowsAzure.MobileServices;
-using Newtonsoft.Json;
 
 namespace FormsExample.Services
 {
@@ -20,17 +19,5 @@ namespace FormsExample.Services
         {
             return await _MobileService.GetTable<Note>().ToListAsync();
         }
-    }
-
-    public class Note
-    {
-        [JsonProperty("id")]
-        public string Id { get; set; }
-
-        [JsonProperty("title")]
-        public string Title { get; set; }
-
-        [JsonProperty( "text" )]
-        public string Text { get; set; }
     }
 }

@@ -3,9 +3,9 @@
 
 namespace FormsExample.Pages
 {
-    public partial class MobileServicesStorage 
+    public partial class NotesListView 
     {
-        public MobileServicesStorage()
+        public NotesListView()
         {
             InitializeComponent();
         }

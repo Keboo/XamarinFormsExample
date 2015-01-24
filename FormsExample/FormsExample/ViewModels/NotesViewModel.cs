@@ -1,7 +1,6 @@
-﻿using System.Collections.ObjectModel;
-using System.Threading.Tasks;
-using FormsExample.Services;
+﻿using FormsExample.Services;
 using GalaSoft.MvvmLight;
+using System.Collections.ObjectModel;
 
 namespace FormsExample.ViewModels
 {
@@ -18,7 +17,6 @@ namespace FormsExample.ViewModels
 
         public async void LoadNotesAsync()
         {
-            await Task.Delay(1000);
             bool clear = true;
             foreach ( var note in await _NoteService.GetNotesAsync() )
             {

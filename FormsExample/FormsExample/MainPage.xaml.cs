@@ -16,12 +16,14 @@ namespace FormsExample
                 new NamedPage<MVVMLightPage>("MVVMLight Demo"),
                 new NamedPage<ItemSourceBinding>("Item Source Binding"),
                 new NamedPage<Messaging>("Messaging"),
-                new NamedPage<MobileServicesStorage>("Notes Mobile Service"),
+                new NamedPage<NotesListView>("Notes Mobile Service"),
+                new NamedPage<NotesSyncList>("Notes w/ Offline Sync"),
             };
             ListView.ItemTapped += ListViewOnItemTapped;
 
             #region Note Example Implementation
-            Messenger.Default.Register<NavigateToPage>( this, OnNavigateToPage );
+            Messenger.Default.Register<PushPageMessage>( this, OnPushPage );
+            Messenger.Default.Register<PopPageMessage>( this, async msg => await Navigation.PopAsync() );
             #endregion Note Example Implementation
         }
 
@@ -36,7 +38,7 @@ namespace FormsExample
 
         #region Note Example Implementation
 
-        private async void OnNavigateToPage( NavigateToPage message )
+        private async void OnPushPage( PushPageMessage message )
         {
             await Navigation.PushAsync( message.Page );
         }

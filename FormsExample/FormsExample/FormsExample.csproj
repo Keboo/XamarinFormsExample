@@ -38,7 +38,8 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Messages\NavigateToPage.cs" />
+    <Compile Include="Messages\PopPageMessage.cs" />
+    <Compile Include="Messages\PushPageMessage.cs" />
     <Compile Include="Pages\BasicBinding.xaml.cs">
       <DependentUpon>BasicBinding.xaml</DependentUpon>
     </Compile>
@@ -48,19 +49,30 @@
     <Compile Include="Pages\Messaging.xaml.cs">
       <DependentUpon>Messaging.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\NoteDetailsPage.xaml.cs">
+      <DependentUpon>NoteDetailsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\NotesListView.xaml.cs">
       <DependentUpon>NotesListView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\MVVMLightPage.xaml.cs">
       <DependentUpon>MVVMLightPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\NotesSyncList.xaml.cs">
+      <DependentUpon>NotesSyncList.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ILocalStorage.cs" />
+    <Compile Include="Services\Note.cs" />
     <Compile Include="Services\NoteService.cs" />
+    <Compile Include="Services\NoteServiceWithSync.cs" />
     <Compile Include="ValueConverter\MultiplyValueConverter.cs" />
     <Compile Include="ViewModels\BasicBindingViewModel.cs" />
     <Compile Include="ViewModels\ItemSourceViewModel.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
     <Compile Include="ViewModels\MessagingViewModel.cs" />
+    <Compile Include="ViewModels\NoteDetailsViewModel.cs" />
+    <Compile Include="ViewModels\NotesSyncListViewModel.cs" />
     <Compile Include="ViewModels\NotesViewModel.cs" />
     <Compile Include="ViewModels\MVVMLightViewModel.cs" />
   </ItemGroup>
@@ -77,8 +89,14 @@
     <Reference Include="Microsoft.WindowsAzure.Mobile">
       <HintPath>..\..\packages\WindowsAzure.MobileServices.1.3.0\lib\portable-win+net45+wp8+wpa81+monotouch+monoandroid\Microsoft.WindowsAzure.Mobile.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Mobile.SQLiteStore">
+      <HintPath>..\..\packages\WindowsAzure.MobileServices.SQLiteStore.1.0.0\lib\portable-win+net45+wp8+wpa81+monotouch+monoandroid\Microsoft.WindowsAzure.Mobile.SQLiteStore.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\packages\Newtonsoft.Json.6.0.4\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCL">
+      <HintPath>..\..\packages\SQLitePCL.3.8.5.1\lib\portable-net45+sl50+win+wpa81+wp80+MonoAndroid10+MonoTouch10\SQLitePCL.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http">
       <HintPath>..\..\packages\Microsoft.Net.Http.2.2.28\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.dll</HintPath>
@@ -132,6 +150,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pages\NotesListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\NotesSyncList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\NoteDetailsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
